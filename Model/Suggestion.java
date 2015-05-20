@@ -4,7 +4,7 @@ import java.util.*;
 /**
  * 
  */
-public class Suggestions {
+public class Suggestion {
 
     /**
      * 
