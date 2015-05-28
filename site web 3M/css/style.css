@@ -1,39 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-/*  pour annuler user agent stylesheet*/
-html, body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, form, img, table, dl, dt, dd, img {
-	padding: 0;
-	margin: 0;
-	outline: none;
-}
 ::-webkit-selection { color: white;  background: #333333; }
 ::-ms-selection { color: white;  background: #333333; }
 ::-o-selection { color: white;  background: #333333; }
 ::-moz-selection { color: white;  background: #333333; }
 ::selection      { color: white;  background: #333333; } 
 
-body {
-	font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
-}
-
-
-a {
-	text-decoration: none;
-}
-
-:-moz-any-link:focus {
-  outline: none;
-}
-
-a:link, a:visited, a:focus, a:hover {
-	-webkit-transition: all 0.4s ease-out;
-	-moz-transition: all 0.4s ease-out;
-	-ms-transition: all 0.4s ease-out;
-	-o-transition: all 0.4s ease-out;
-	outline: none;
-	text-decoration: none
-}
 
 
 
@@ -42,456 +15,289 @@ colors
 grie dark : 3a3f41;
 grie soft : 5d5f60;
 dedfdf
-yellow dark : ad9400;
-yellow soft : d6be33;
+yellow dark : 009a7e;
+yellow soft : 00be9c;
 */
-/************** top banner ********************/
 
-.top-banner {
+/********************* login page ***************************/
+
+.page form {
+	margin-top: 150px;
+}
+.page form .form-control {
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+}
+/* right side */
+.page-right .form-control:focus {
+	border-color: #3a3f41;
+}
+.page-right .form-group input:focus:invalid {
+	border-color: #5d5f60;
+}
+.page-right .form-group input:focus:valid {
+	border-color: #3a3f41;
+}
+
+.page-right .btn-valide {
 	text-align: center;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	padding-left: 40px;
-	padding-right: 40px;
-}
-.top-banner h3,
-.top-banner h4 {
-	color : #666;
-}
-.top-banner img {
-	width: auto;
-	height: 80px;
-}
-/************** menu *****************/
-
-#navbar-main {
-	text-align: center;
-	margin-top: 10px;
-}
-
-#navbar-main ul {
-	text-align: center;
-	margin: auto auto;
-}
-
-.menu .navbar-nav {
-    display: inline-block;
-    float: none;
-}
-.menu .navbar-nav > li > a {
-	color: #4f5c5c;
-	margin-left: 5px;
-	margin-right: 5px;
-}
-.menu .navbar-nav > li > a:hover,
-.menu .navbar-nav > li > a:focus,
-.menu .navbar-nav > li > a.active {
-	background-color: #eb3e44;
-	color: #ffffff;
-}
-.dropdown-menu {
 	width: 100%;
-}
-.dropdown-menu a.btn-nav {
-	color: #4f5c5c;
-	width: 100%;
-	text-align: left;
-}
-.dropdown-menu a:hover {
-	color: #4f5c5c;
-}
-/******************** liste formation *******************/
-
-#listeFormation .container {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-#listeFormation .nav-pills a.btn-nav-pills {
-	background-color: #eb3e44;
+	background-color: #3a3f41;
 	color: #ffffff;
-	text-align: left;
 	border-radius: 0px;
-	margin-bottom: 5px;
-}
-
-#listeFormation .nav-pills a:hover,
-#listeFormation .nav-pills a:focus {
-	background-color: #b42d31;
-	color: #ffffff;
-}
-/*************** banner top *******************/
-
-.banner-top {
-	background-image: url(../images/banner-bg.png);
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: cover;
-	background-color: #eb3e44;
-	color: #ffffff;
-	width: 100%;
-	height: 500px;
-	font-family: Helvetica, sans-serif;
-}
-.banner-top .left-side {
-	padding-top: 150px;
-}
-.banner-top .left-side h1 {
-	font-size: 500%;
-}
-
-.banner-top .right-side {
-	text-align: center;
-}
-.banner-top .right-side img {
-	height: 50%;
-	width: auto;
-}
-
-/********** content ************/
-
-.content {
-	padding-top: 100px;
-	padding-bottom: 100px;
-	color: #4f5c5c;
-}
-.content h1 {
-	font-family: Helvetica, sans-serif;
-	font-size: 2.25em;
-	color: #eb3e44;
-	text-align: right;
-}
-
-.content .text-content {
-	padding-top: 20px;
-}
-.content .text-content .items {
-	margin-bottom: 10px;
-}
-.content .text-content .item {
-	text-align: center;
-}
-.content .text-content .item p.colored {
-	color: #eb3e44;
-}
-.content .text-content .item img {
-	width: 100%;
-	height: auto;
-}
-
-/************* footer style ******************/
-
-.footer {
-	padding-top: 10px;
-	border-top: 5px solid #b42d31;
-	background-color: #333333;
-	padding-bottom: 30px;
-	color: #999999;
-}
-.footer h2 {
-	padding-left: 15px;
-	color: #dedede;
-}
-.footer span {
-	color: #dedede;
-	margin-right: 10px;
-}
-
-.footer .lien .btn-facebook {
-	width: 30px;
-	height: 30px;
-	background-color: #999999;
-	padding: 0px 0px;
-	color: #999999;
-	outline: none;
-}
-
-.footer .lien .btn-facebook:hover {
-	background-color: #eb3e44;
-	color: #dedede;
-}
-.footer .lien .btn-facebook img {
-	width: 100%;
-	height: auto;
-	margin-right: 10px;
-}
-/****************** inscription area style ****************/
-.inscription {
-	background-color: #eb3e44;
-	color: #ebebeb;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-.inscription h1 {
-	margin-top: 30px;
-	color: #b42d31;
-}
-.inscription h1.title {
-	margin-top: 80px;
-	font-size: 500%;
-	color: #b42d31;
-}
-.inscription img {
-	text-align: center;
-	width: 80%;
-	height: auto;
-}
-.inscription .btn-inscription {
-	margin-top: 20px;
-	background-color: #b42d31;
-	color: #ffffff;
-	font-size: 22px;
-	line-height: 26px;
-	padding: 15px 30px;
-	text-transform: uppercase;
-}
-.inscription .btn-inscription:hover {
-	background-color: #ffffff;
-	color: #eb3e44;
-}
-
-/*************** ensa khouribga page style ********************/
-.banner-top-ensak {
-	width: 100%;
-	height: 305px;
-	background-image: url(../images/ensak-img.jpg);
-	background-color: #f5f4e3;
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: cover;
-  	border-bottom: 5px solid #eb3e44;
-}
-.content .image-panel img {
-	width: 100%;
-	height: auto;
-	padding-top: 20px;
-}
-.content h4 {
-	color: #eb3e44;
-}
-
-.contact-ensak {
-	background-color: #333333;
-	border-bottom: 5px solid #999999;
-	color: #999999;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-.contact-ensak h1 {
-	padding-left: 15px;
-	color: #dedede;
-	margin-bottom: 40px;
-}
-.contact-ensak img {
-	text-align: center;
-	width: 80%;
-	height: auto;
-}
-
-.contact-ensak span {
-	color: #dedede;
-	margin-right: 10px;
-}
-
-/**************** inscription page style ***********************/
-.form-area {
-	margin-bottom: 50px;
-}
-.sub {
-	text-align: center;
-	padding-bottom: 10px;
-	padding-top: 10px;
-	color: #ffffff;
-	background-color: #b42d31;
-	margin-bottom: 30px;
-}
-.sub h2.title {
-	margin-top: 10px;
-}
-.sub p {
-	color: #dedede;
-}
-
-.form-control:focus {
-	border-color: #eb3e44;
-}
-.form-group input:focus:invalid {
-	border-color: #eb3e44;
-}
-.form-group input:focus:valid {
-	border-color: #eb3e44;
-}
-form label {
-	color: #999;
-}
-form textarea {
-	max-width: 100%;
-	min-width: 100%;
-	min-height: 100px;
-	max-height: 200px;
-}
-
-form button.btn-valide {
-	background-color: #eb3e44;
-	color: #ffffff;
-	text-transform: uppercase;
-	width: 100%;
 	-webkit-transition: all 0.4s ease-out;
 	-moz-transition: all 0.4s ease-out;
 	-ms-transition: all 0.4s ease-out;
 	-o-transition: all 0.4s ease-out;
 }
-form button.btn-valide:hover {
-	background-color: #b42d31;
+
+.page-right .btn-valide:hover {
+	background-color: #5d5f60;
 	color: #ffffff;
 }
-
-/*********************** formation page style ********************/
-
-.banner-top-formation {
-	width: 100%;
-	height: 305px;
-	background-image: url(../images/ensak-img.jpg);
-	background-color: #f5f4e3;
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: cover;
-  	border-bottom: 5px solid #eb3e44;
+.page-right .input-group-addon {
+  color: #ffffff;
+  background-color: #3a3f41;
+  border: 1px solid #3a3f41;
 }
-.sub-formation {
-	background-color: #eb3e44;
-	padding-top: 20px;
-	padding-bottom: 20px;
+
+/* left side */
+.page-left .form-control:focus {
+	border-color: #00be9c;
+}
+.page-left .form-group input:focus:invalid {
+	border-color: #3a3f41;
+}
+.page-left .form-group input:focus:valid {
+	border-color: #00be9c;
+}
+
+.page-left .btn-valide {
+	text-align: center;
+	width: 100%;
+	background-color: #00be9c;
 	color: #ffffff;
-	text-align: center;
-	margin-bottom: 30px;
-}
-.sub-formation h1.title {
-	margin-top: 10px;
-}
-
-.section {
-	padding-bottom: 30px;
-	color: #4f5c5c;
-}
-
-.section h1.title {
-	font-family: Helvetica, sans-serif;
-	font-size: 2.25em;
-	color: #eb3e44;
-	text-align: right;
-}
-
-.section .semestre h1.header-box {
-	width: 80px;
-	height: 80px;
-	padding-top: 20px;
-	text-align: center;
-	background-color: #eb3e44;
-	color: #ffffff;
-}
-.section .semestre .modules {
-	padding-top: 20px;
-}
-.section .section-content h4 {
-	color: #eb3e44;
-}
-.section .section-content {
-	padding-top: 20px;
-}
-
-.section .section-content img {
-	width: 100%;
-	height: auto;
-	text-align: center;
-}
-
-.info-general {
-	background-color: #333333;
-	border-bottom: 5px solid #999999;
-	color: #999999;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-.info-general h1 {
-	padding-left: 15px;
-	color: #dedede;
-	margin-bottom: 40px;
-}
-.info-general img {
-	text-align: center;
-	width: 80%;
-	height: auto;
-}
-
-.info-general span {
-	color: #dedede;
-	margin-right: 10px;
-}
-
-.image-holder {
-	width: 100%;
-	height: 500px;
-	background-image: url(../images/office.jpg);
-	background-color: #f5f4e3;
-  	background-repeat: no-repeat;
-  	background-position: center;
-  	background-size: cover;
-}
-
-/********** liste prof ***************/
-
-.list-prof img {
-	padding-top: 10px;
-	width: 100%;
-	height: auto;
-	-webkit-filter: grayscale(100%);
+	border-radius: 0px;
 	-webkit-transition: all 0.4s ease-out;
 	-moz-transition: all 0.4s ease-out;
 	-ms-transition: all 0.4s ease-out;
 	-o-transition: all 0.4s ease-out;
 }
-.overlay {
-	bottom: 0;  
-	left: 0;
-	right: 0;
+
+.page-left .btn-valide:hover {
+	background-color: #009a7e;
+	color: #ffffff;
+}
+.page-left .input-group-addon {
+  color: #ffffff;
+  background-color: #00be9c;
+  border: 1px solid #00be9c;
+}
+
+/********** side-bar style ************/
+#wrapper {
+  	padding-left: 300px;
+  	transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  	margin-left: -300px;
+  	left: 300px;
+  	width: 300px;
+  	background: #3a3f41;
+  	position: fixed;
+  	height: 100%;
+  	overflow-y: auto;
+  	z-index: 1000;
+  	-webkit-transition-duration: 1.0s;
+    -moz-transition-duration: 1.0s;
+    -o-transition-duration: 1.0s;
+    transition-duration: 1.0s;
+  	transition: all 1.0s ease 0s;
+}
+#page-content-wrapper {
+  	width: 100%;
+}
+.sidebar-nav {
+  	padding: 0px 0px;
+}
+.sidebar-menu {
+  	margin: 5px 0px;
+  	width: 100%;
+}
+
+
+.content-header {
+  	height: 65px;
+  	line-height: 65px;
+  	display: none;
+}
+
+.content-header h1 {
+  	margin: 0;
+  	margin-left: 20px;
+  	line-height: 65px;
+  	display: none;
+}
+.info {
+	text-align: center;
+	color: #ffffff;
+}
+.info .profile {
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	padding-bottom: 5px;
+}
+.info .profile img {
 	width: 100%;
 	height: 100%;
-	opacity: 0;
-	display: block;
-	position: absolute;
-	z-index: 20;
-	background: url(../images/bg-opacity.png) repeat;
-	overflow: hidden;
-	transition: all 0.5s;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	text-align: center;
-	padding-top: 128px;
-	color: #ffffff;
+	border-radius: 50%;
+	border: 5px solid #5d5f60;
 }
-.overlay:hover {
-	opacity: 1;
+.info h3.name-header {
+	color: #dedfdf;
 }
-a.overlay-content {
-	color: #333333;
+#menu-toggle {
+  	display: none;
 }
-a.overlay-content:hover {
+
+.inset {
+	
+  	padding: 20px;
+}
+
+@media (max-width:767px) {
+
+	#wrapper {
+	  padding-left: 0;
+	}
+
+	#sidebar-wrapper {
+	  left: 0;
+	}
+
+	#wrapper.active {
+	  position: relative;
+	  left: 300px;
+	}
+
+	#wrapper.active #sidebar-wrapper {
+	  left: 300px;
+	  width: 300px;
+	  -webkit-transition-duration: 1.0s;
+	    -moz-transition-duration: 1.0s;
+	    -o-transition-duration: 1.0s;
+	    transition-duration: 1.0s;
+	  transition: all 1.0s ease 0s;
+	}
+	.content-header {
+	  display: inline-block;
+	}
+
+	.content-header h1 {
+	  display: inline-block;
+	}
+	#menu-toggle {
+	  display: inline-block;
+	}
+
+	.inset {
+	  padding: 15px;
+	}
+
+}
+
+
+/********************* admin login page ************************/
+
+
+body.login-body {
+	min-height: 600px;
+	background-image: url(../images/login-background.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.login-content .logo-banner {
+	font-family: "AvenirLT-Roman","Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin-top: 30px;
+	height: 50px;
+}
+.login-content .logo-banner img {
+	height: 100%;
+	width: auto;
+}
+
+.login-content .form-content {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.login-content .login {
+	width: 600px;
+	margin-top: 100px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	background: #fff;
+	padding: 20px 40px 60px 40px;
+	display: table;
+}
+.forget-pass-content .forget-pass {
+	padding: 20px 40px 56px 40px;
+}
+.login-content a {
+	color: #948b7d;
+}
+.login-content a:hover {
 	cursor: pointer;
-	color: #ffffff;
+	color: #554e44;
 	text-decoration: none;
 }
-.list-prof h3,
-.list-prof p {
+.form-group input:focus:invalid {
+	border-color: #e1dcd3;
+}
+.form-group input:focus:valid {
+	border-color: #00be9c;
+}
+.btn {
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+}
+.btn-submit {
 	text-align: center;
+	width: 100%;
+	background-color: #00be9c;
+	color: #ffffff;
+	border-radius: 0px;
 }
-.list-prof img {
-	-webkit-filter: grayscale(0%);
+.btn-submit:hover,
+.btn-submit:focus {
+	background-color: #009a7e;
+	color: #ffffff;
 }
-.list-prof .prof-content {
-	margin-bottom: 10px;
+.login-body h1,
+.login-body h2 {
+	color: #00be9c;
 }
-h1.title-center {
-	color: #eb3e44;
-	text-align: center;
+
+footer {
+	margin-top: 65px;
+	padding: 20px 0px;
+	color: #ffffff;
 }

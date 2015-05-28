@@ -1,5 +1,5 @@
 html, body, 
-.container {
+.container-login {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -136,6 +136,10 @@ body {
 	opacity: 0;
 	pointer-events: none;
 	color: #ad9400;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
 }
 
 .mobile-layout .back { /* fixed positioning will make this not clickable after scrolling on some mobile devices */
@@ -157,6 +161,7 @@ body {
 }
 .back:hover {
 	color: #d6be33;
+	text-decoration: none;
 }
 .open-right .back-left,
 .open-left .back-right {
@@ -173,7 +178,7 @@ body {
 	position: relative;
 	top: 0;
 	overflow: auto;
-	min-height: 100%;
+	min-height: 1000px;
 	width: 75%;
 	height: auto;
 	font-size: 1.4em;
@@ -220,6 +225,7 @@ body {
 	margin: 0 0 1em 0;
 	font-weight: 300;
 	font-size: 2.4em;
+	text-align: center;
 }
 
 .page-inner p {
