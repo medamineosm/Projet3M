@@ -24,6 +24,12 @@ textarea {
 	max-height: 150px;
 	min-height: 100px;
 }
+a {
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+}
 /********************* login page ***************************/
 
 .page form {
@@ -512,6 +518,17 @@ footer {
 ul {
 	list-style: none;
 }
+.competence-content li a {
+	padding: 2px;
+	color: #ffffff;
+	margin-left: 8px;
+	padding-left: 5px;
+}
+.competence-content li a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	background-color: #e74c3c;
+}
 /****************************************/
 .langue-content .langue {
 	margin: 5px;
@@ -541,8 +558,20 @@ ul {
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+.langue-content .langue a {
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
+	margin-top: -3px;
+	color: #ffffff;
+}
+.langue-content .langue a:hover,
+.langue-content .langue a:focus {
+	text-decoration: none;
+	cursor: pointer;
 }
 /*********** sub colors ************/
 .formation-title .sub-line {
@@ -613,10 +642,23 @@ ul {
 	margin-right: 10px;
 }
 .add-btn a:hover,
-.add-btn a:focus {
+.add-btn a:focus,
+.update-btn a:hover,
+.update-btn a:focus {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+.update-btn a {
+	padding: 10px;
+	color: #ffffff;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+}
+
+
 
 .formation-content a {
 	background-color: #00be9c;
@@ -788,4 +830,23 @@ input {
 }
 .modal-formation .btn-submit:hover {
 	background-color: #009a7e;
+}
+/****************************************/
+.footer {
+	margin-bottom: 30px;
+	margin-left: 15px;
+}
+.btn-valider {
+	background-color: #3a3f41;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+	border-radius: 0px;
+}
+.btn-valider:hover {
+	background-color: #5d5f60;
+	text-decoration: none;
+	cursor: pointer;
+	color: #ffffff;
 }
