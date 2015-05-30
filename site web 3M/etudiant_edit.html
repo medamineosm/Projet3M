@@ -28,13 +28,13 @@
           <div class="main-menu">
             <ul class="sidebar-menu">
               <li>
-                <a href="#" class="active">
+                <a href="#">
                   <span class="glyphicon glyphicon-tasks"></span>
                   PROFILE
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" class="active">
                   <span class="glyphicon glyphicon-cog"></span>
                   EDIT PROFILE
                 </a>
@@ -119,24 +119,10 @@
                     <div class="formation-desc"><p>ENSA Khouribga Cycle d’ingénieur GI.</p></div>
                   </div>
                 </div>
-                <!-- pour chaque formation -->
-                <div class="col-lg-12 formation">
-                  <div class="col-lg-2">
-                    <div class="date-formation row"><h4>2010 - 2014</h4></div>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="formation-desc"><p>ENSA Khouribga Cycle préparatoire intégré, cycle d’ingénieur Tronc Commun.</p></div>
-                  </div>
-                </div>
-                <!-- pour chaque formation -->
-                <div class="col-lg-12 formation">
-                  <div class="col-lg-2">
-                    <div class="date-formation row"><h4>2009 - 2010</h4></div>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="formation-desc"><p>Baccalauréat au Lycée SIDI AHMED BENASSER à Zagoura. 
-                    Série : Sciences Mathématique A.</p></div>
-                  </div>
+
+                <!-- button add -->
+                <div class="col-lg-12 add-btn">
+                  <a data-toggle="modal" data-target="#add_formation" class="pull-right"><span class="glyphicon glyphicon-plus"></span>Ajouter</a>
                 </div>
                 
               </div>
@@ -192,6 +178,12 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- button add -->
+                <div class="col-lg-12 add-btn">
+                  <a data-toggle="modal" data-target="#add_experience" class="pull-right"><span class="glyphicon glyphicon-plus"></span>Ajouter</a>
+                </div>
+
               </div>
               <!-- FIN Section des Expériences  -->
 
@@ -244,6 +236,11 @@
                   </div>
                 </div>
 
+                <!-- button add -->
+                <div class="col-lg-12 add-btn">
+                  <a data-toggle="modal" data-target="#add_projet" class="pull-right"><span class="glyphicon glyphicon-plus"></span>Ajouter</a>
+                </div>
+
               </div>
               <!-- FIN Section des Projet  -->
 
@@ -274,6 +271,11 @@
                     <li><span class="label-competence">Netbeans</span></li>
                     <li><span class="label-competence">Meta</span></li>
                   </ul>
+                </div>
+
+                <!-- button add -->
+                <div class="col-lg-12 add-btn">
+                  <a data-toggle="modal" data-target="#add_competence" class="pull-right"><span class="glyphicon glyphicon-plus"></span>Ajouter</a>
                 </div>
               </div>
               <!-- FIN Section des Compétences  -->
@@ -317,6 +319,12 @@
                     </li>
                   </ul>
                 </div>
+
+                <!-- button add -->
+                <div class="col-lg-12 add-btn">
+                  <a data-toggle="modal" data-target="#add_langue" class="pull-right"><span class="glyphicon glyphicon-plus"></span>Ajouter</a>
+                </div>
+
               </div>
 
               <!-- FIN Section des language  -->
@@ -327,11 +335,195 @@
       </div>
       
     </div>
-  
+
+
+
+    <!-- Modal add or update formation -->
+    <div class="modal fade modal-formation" id="add_formation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Gestion Langue</h4>
+          </div>
+          <div class="modal-body">
+
+              <form class="bs-example form-horizontal" method="POST" action="">
+                <fieldset>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input class="form-control" name="nom_langue" placeholder="Intitule Langue" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input class="form-control" name="niveau" placeholder="Niveau" type="text">
+                        </div>
+                      </div>
+                      <input id="button" type="submit" value="Modifier" class="btn btn-submit"></input>
+                      <input id="button" type="submit" value="Supprimer" class="btn btn-submit"></input>
+                      <input id="button" type="submit" value="Ajouter" class="btn btn-submit"></input>
+                </fieldset>
+              </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Modal add or update experience -->
+    <div class="modal fade modal-experience" id="add_experience" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Gestion Langue</h4>
+          </div>
+          <div class="modal-body">
+
+              <form class="bs-example form-horizontal" method="POST" action="">
+                <fieldset>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input class="form-control" name="nom_langue" placeholder="Intitule Langue" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input class="form-control" name="niveau" placeholder="Niveau" type="text">
+                        </div>
+                      </div>
+                      <input id="button" type="submit" value="Modifier" class="btn btn-submit"></input>
+                      <input id="button" type="submit" value="Supprimer" class="btn btn-submit"></input>
+                      <input id="button" type="submit" value="Ajouter" class="btn btn-submit"></input>
+                </fieldset>
+              </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Modal add or update projet -->
+    <div class="modal fade modal-projet" id="add_projet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Gestion Langue</h4>
+          </div>
+          <div class="modal-body">
+
+              <form class="bs-example form-horizontal" method="POST" action="">
+                <fieldset>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input class="form-control" name="nom_langue" placeholder="Intitule Langue" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input class="form-control" name="niveau" placeholder="Niveau" type="text">
+                        </div>
+                      </div>
+                      <input id="button" type="submit" value="Modifier" class="btn btn-submit"></input>
+                      <input id="button" type="submit" value="Supprimer" class="btn btn-submit"></input>
+                      <input id="button" type="submit" value="Ajouter" class="btn btn-submit"></input>
+                </fieldset>
+              </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Modal add or update competence -->
+    <div class="modal fade modal-competence" id="add_competence" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Gestion Langue</h4>
+          </div>
+          <div class="modal-body">
+
+              <form class="bs-example form-horizontal" method="POST" action="">
+                <fieldset>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input class="form-control" name="nom_langue" placeholder="Intitule Langue" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input class="form-control" name="niveau" placeholder="Niveau" type="text">
+                        </div>
+                      </div>
+                      <input id="button" type="submit" value="Modifier" class="btn btn-submit"></input>
+                      <input id="button" type="submit" value="Supprimer" class="btn btn-submit"></input>
+                      <input id="button" type="submit" value="Ajouter" class="btn btn-submit"></input>
+                </fieldset>
+              </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Modal add or update language -->
+    <div class="modal fade modal-langue" id="add_langue" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Gestion Langue</h4>
+          </div>
+          <div class="modal-body">
+
+              <form class="bs-example form-horizontal" method="POST" action="">
+                <fieldset>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input class="form-control" name="nom_langue" placeholder="Intitule Langue" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-lg-12">
+                          <input class="form-control" name="niveau" placeholder="Niveau" type="text">
+                        </div>
+                      </div>
+                      <input id="button" type="submit" value="Modifier" class="btn btn-submit"></input>
+                      <input id="button" type="submit" value="Supprimer" class="btn btn-submit"></input>
+                      <input id="button" type="submit" value="Ajouter" class="btn btn-submit"></input>
+                </fieldset>
+              </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
     <!-- JavaScript -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="dist/js/bootstrap.js"></script>
 
     <!-- Custom JavaScript for the Menu Toggle -->
     <script>
