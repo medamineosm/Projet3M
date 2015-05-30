@@ -6,6 +6,7 @@
     <title>ENSAK CV</title>
     <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/admin.css" />
 </head>
 
 <body>
@@ -14,29 +15,35 @@
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
         <div class="sidebar-nav">
-          <div class="info">
+          <div class="image-holder">
             <div class="media">
               <div class="pull-left">
-                <img class="media-object" src="images/1.jpg">
+                <img class="media-object" src="images/flat/admin.png">
               </div>
               <div class="media-body">
-                <h3>Mouad SAHI</h3>
+                <h2 class="pull-right">Mouad SAHI</h2>
               </div>
             </div>
           </div>
 
-          <div class="main-menu">
+          <div class="admin-menu">
             <ul class="sidebar-menu">
               <li>
                 <a href="#" class="active">
                   <span class="glyphicon glyphicon-tasks"></span>
-                  PROFILE
+                  ACCUEIL
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <span class="glyphicon glyphicon-cog"></span>
-                  EDIT PROFILE
+                  <span class="glyphicon glyphicon-th-list"></span>
+                  LISTE GROUPES
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="glyphicon glyphicon-plus"></span>
+                  CREATION GROUPES
                 </a>
               </li>
               <li>
@@ -53,7 +60,6 @@
               </li>
             </ul>
           </div>
-
         </div>    
       </div>
           
@@ -68,7 +74,7 @@
         <div class="page-content inset">
           <div class="col-lg-12">
             <div class="main-header">
-              <h2>PROFILE</h2>
+              <h2>PROFILE DE Mouad Sahi</h2>
             </div>
           </div>
 
@@ -77,9 +83,11 @@
               
               <div class="info-general">
                 <div class="col-lg-12">
-                  <div class="col-lg-7">
-                    <h2>SAHI Mouad</h2>
+                  <div class="col-lg-2"><img src="images/1.jpg"></div>
+                  <div class="col-lg-5">
+                    <h4>SAHI Mouad</h4>
                     <p>Elève Ingénieur en Génie informatique ENSA Khouribga</p>
+                    <p>Groupe GI</p>
                   </div>
                   <div class="col-lg-5 contact">
                     <p class="contact-component"><span class="glyphicon glyphicon-envelope"></span>mouad.sahi@gmail.com</p>
@@ -111,36 +119,22 @@
               <div class="formation-content">
 
                 <!-- pour chaque formation -->
-                <div class="col-lg-12 formation not-confirm" data-toggle="tooltip" data-placement="top" title="Not Confirm">
+                <div class="col-lg-12 formation">
                   <div class="col-lg-2">
                     <div class="date-formation row"><h4>2014 - 2015</h4></div>
                   </div>
                   <div class="col-lg-10">
                     <div class="formation-desc"><p>ENSA Khouribga Cycle d’ingénieur GI.</p></div>
                   </div>
-                </div>
-                <!-- pour chaque formation -->
-                <div class="col-lg-12 formation">
-                  <div class="col-lg-2">
-                    <div class="date-formation row"><h4>2010 - 2014</h4></div>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="formation-desc"><p>ENSA Khouribga Cycle préparatoire intégré, cycle d’ingénieur Tronc Commun.</p></div>
-                  </div>
-                </div>
-                <!-- pour chaque formation -->
-                <div class="col-lg-12 formation">
-                  <div class="col-lg-2">
-                    <div class="date-formation row"><h4>2009 - 2010</h4></div>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="formation-desc"><p>Baccalauréat au Lycée SIDI AHMED BENASSER à Zagoura. 
-                    Série : Sciences Mathématique A.</p></div>
+                  <!-- button update -->
+                  <div class="col-lg-12 update-btn">
+                    <a href="#"  class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
                   </div>
                 </div>
                 
               </div>
               <!-- FIN Section des formation  -->
+
               <!-- Section des Expériences  -->
               <div class="section-title  experience-title">
                 <div class="col-lg-12">
@@ -175,23 +169,12 @@
                       </p>
                     </div>
                   </div>
-                </div>
-                <!-- pour chaque experience -->
-                <div class="col-lg-12 experience">
-                  <div class="col-lg-2 date-experience">
-                    <h4>10/07/2015</h4>
-                    <div class="short-line"></div>
-                    <h4>10/09/2015</h4>
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="bs-callout-experience">
-                      <h4>Stage d’observation</h4>
-                      <p>Entreprise : Agence du Bassin Hydraulique du Tensift (ABHT)</p>
-                      <p>Stage au sein de L’agence du Bassin Hydraulique du Tensift (ABHT) Marrakech.
-                      </p>
-                    </div>
+                  <!-- button update -->
+                  <div class="col-lg-12 update-btn">
+                    <a href="#"  class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
                   </div>
                 </div>
+
               </div>
               <!-- FIN Section des Expériences  -->
 
@@ -228,6 +211,10 @@
                       <p><span class="glyphicon glyphicon-calendar"></span>Date : </p>
                     </div>
                   </div>
+                  <!-- button update -->
+                  <div class="col-lg-12 update-btn">
+                    <a href="#" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
+                  </div>
                 </div>
                 <!-- pour chaque experience -->
                 <div class="col-lg-12 projet">
@@ -241,6 +228,10 @@
                       <p><span class="glyphicon glyphicon-map-marker"></span>Lieu : </p>
                       <p><span class="glyphicon glyphicon-calendar"></span>Date : </p>
                     </div>
+                  </div>
+                  <!-- button valide -->
+                  <div class="col-lg-12 update-btn">
+                    <a href="#" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
                   </div>
                 </div>
 
@@ -268,13 +259,34 @@
               <div class="competence-content">
                 <div class="col-lg-12">
                   <ul>
-                    <li><span class="label-competence">New</span></li>
-                    <li><span class="label-competence">Java</span></li>
-                    <li><span class="label-competence">C++</span></li>
-                    <li><span class="label-competence">Netbeans</span></li>
-                    <li><span class="label-competence">Meta</span></li>
+                    <li>
+                      <span class="label-competence">New</span>
+                      <!-- valide btn -->
+                      <a href="#" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
+                    </li>
+                    <li>
+                      <span class="label-competence">Java</span>
+                      <!-- valide btn -->
+                      <a href="#" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
+                    </li>
+                    <li>
+                      <span class="label-competence">C++</span>
+                      <!-- valide btn -->
+                      <a href="#" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
+                    </li>
+                    <li>
+                      <span class="label-competence">Netbeans</span>
+                      <!-- valide btn -->
+                      <a href="#" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
+                    </li>
+                    <li>
+                      <span class="label-competence">Meta</span>
+                      <!-- valide btn -->
+                      <a href="#" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
+                    </li>
                   </ul>
                 </div>
+
               </div>
               <!-- FIN Section des Compétences  -->
 
@@ -303,35 +315,43 @@
                     <li>
                       <div class="langue">
                         <span class="label-langue">Arabe</span><span class="niveau-langue" >Langue maternelle.</span>
+                        <!-- update btn -->
+                        <a href="#" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
                       </div>
                     </li>
                     <li>
                       <div class="langue">
                         <span class="label-langue">Français</span><span class="niveau-langue" >Langue courante.</span>
+                        <!-- update btn -->
+                        <a href="#" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
                       </div>
                     </li>
                     <li>
                       <div class="langue">
                         <span class="label-langue">Anglais</span><span class="niveau-langue" >Bon niveau.</span>
+                        <!-- update btn -->
+                        <a href="#" class="pull-right"><span class="glyphicon glyphicon-ok"></span></a>
                       </div>
                     </li>
                   </ul>
                 </div>
+
+
               </div>
 
               <!-- FIN Section des language  -->
             </div>
           </div>
 
+        
         </div>  
       </div>
       
     </div>
   
     <!-- JavaScript -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
 
     <!-- Custom JavaScript for the Menu Toggle -->
     <script>

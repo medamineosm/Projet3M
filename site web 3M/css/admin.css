@@ -144,3 +144,62 @@ table thead {
 .groupe-content strong {
 	color: #00be9c;
 }
+
+/***************************************/
+.acceuil-content {
+	margin-top: -40px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding: 20px;
+	padding-top: 40px;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+	background-color: #ffffff;
+	color: #888888;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05), 0 0 2px #888888;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05), 0 0 2px #888888;
+}
+
+/**********************************/
+.etudiant-update {
+	background-color: #f9f9f9;
+	color: #888888;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-left: 3px solid #00be9c;
+}
+.etudiant-update p {
+	margin: 0px;
+}
+.etudiant-update .media img {
+	width: 80px;
+	height: 80px;
+}
+.etudiant-update .media h4 {
+	color: #00be9c;
+}
+.btn-link {
+	background-color: #00be9c;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+	border-radius: 0px;
+}
+
+.btn-link:hover {
+	background-color: #009a7e;
+	text-decoration: none;
+	cursor: pointer;
+	color: #ffffff;
+}
+/*****************/
+.info-general img {
+	width: 130px;
+	height: 130px;
+	border: 2px solid #00be9c;
+}
+.info-general h4 {
+	color: #00be9c;
+}

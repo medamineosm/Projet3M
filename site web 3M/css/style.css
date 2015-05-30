@@ -383,6 +383,7 @@ footer {
 	margin-left: 15px;
 	margin-right: 15px;
 	padding: 20px;
+	padding-top: 40px;
 	margin-bottom: 50px;
 	padding-bottom: 30px;
 	background-color: #ffffff;
@@ -849,4 +850,55 @@ input {
 	text-decoration: none;
 	cursor: pointer;
 	color: #ffffff;
+}
+
+/*************************/
+.not-confirm {
+	opacity: 0.5;
+}
+
+/**************404**************/
+.erreur-body {
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #00be9c;
+	background-attachment: fixed;
+}
+.image-zone {
+	color: #ffffff;
+	text-align: center;
+}
+.image-zone img {
+	margin-bottom: 50px;
+}
+.image-zone a.btn-valide {
+	background-color: #eb3e44;
+	color: #ffffff;
+	text-transform: uppercase;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+}
+.image-zone a.btn-valide:hover {
+	background-color: #b42d31;
+	color: #ffffff;
+}
+.btn-valide-page {
+	background-color: #3a3f41;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+	border-radius: 0px;
+}
+.btn-valide-page:hover {
+	background-color: #ffffff;
+	text-decoration: none;
+	cursor: pointer;
+	color: #3a3f41;
 }
